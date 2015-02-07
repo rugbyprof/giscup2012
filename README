@@ -1,0 +1,28 @@
+This Visual Studio solution file expects the GIS data to be located in a subfolder with the following structure:
+
+giscup_data\
+  WA_EdgeGeometry.txt
+  WA_Edges.txt
+  WA_Nodes.txt
+  GisContestTrainingData\
+    input\
+      input_01.txt
+      input_02.txt
+      .
+      .
+      .
+      input_n.txt
+    output\
+      output_01.txt
+      output_02.txt
+      .
+      .
+      .
+      output_n.txt
+
+The directory giscup_data\ is at the same level as giscup.sln.
+
+If you are running this program from the command line, then it should be run in the following form:
+mapmatch.exe <path to giscup_data>
+
+All files can be downloaded separately from the ACM SIGSPATIAL Cup 2012 website at http://depts.washington.edu/giscup/ .  It is not included in this repository for the sake of space, and will be ignored in the .gitignore file.
